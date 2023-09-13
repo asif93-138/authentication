@@ -5,6 +5,7 @@ import app from '../../firebase/firebase.init';
 
 
 const Login = () => {
+    if (location.href !== 'https://clever-sprite-e7e794.netlify.app/login') {location.assign('https://clever-sprite-e7e794.netlify.app/login');}
     // Initialize Firebase Authentication and get a reference to the service
     const auth = getAuth(app);
     
